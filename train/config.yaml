@@ -1,0 +1,21 @@
+device: 'cpu'
+model_save_path: 'model/save.pt'
+bin_model_save_path: 'model/save.bin'
+
+train_ataxx_data_path: /home/connor/Downloads/ataxx_data/eval_position.txt
+validation_ataxx_data_path: /home/connor/Downloads/ataxx_data/eval_position.txt
+
+shuffle_buffer_size: 100000
+num_workers: 6
+batch_size: 64
+
+visual_directory: 'visual'
+
+epochs: 10000000
+save_rate: 10000
+report_rate: 50
+test_rate: 50
+max_queue_size: 128
+
+
+learning_rate: 1.5
