@@ -36,7 +36,7 @@ def side_to_tensor(bd, color):
   tensor = torch.zeros(side_size(), dtype=torch.bool)
   
   for i, j in itertools.product(range(7), range(7)):
-    tensor[:, i, j] = bd.get(i, j) == color
+    tensor[:, j, i] = bd.get(i, j) == color
 
   return tensor
 
