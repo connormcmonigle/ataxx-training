@@ -1,6 +1,6 @@
 from os import path
 import torch
-import chess
+import ataxx
 
 import config as C
 import util
@@ -21,7 +21,7 @@ print(num_parameters)
 M.cpu()
 
 while True:
-  bd = chess.Board(input("fen: "))
+  bd = ataxx.Board(input("fen: "))
   w, b = util.to_tensors(bd)
   white, black = util.to_tensors(bd)
   val = M(torch.tensor([bd.turn]).float(), white.unsqueeze(0).float(), black.unsqueeze(0).float())
