@@ -1,12 +1,8 @@
 import os
-import math
-import bitstring
-import struct
 import random
 import torch
 import ataxx
 import torch.nn.functional as F
-import numpy as np
 import util
 
 def num_samples(file_path):
