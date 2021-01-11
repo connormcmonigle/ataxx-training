@@ -2,11 +2,11 @@ device: 'cpu'
 model_save_path: 'model/save.pt'
 bin_model_save_path: 'model/save.bin'
 
-train_ataxx_data_path: /home/connor/Downloads/ataxx_data/eval_position.txt
-validation_ataxx_data_path: /home/connor/Downloads/ataxx_data/eval_position.txt
+train_ataxx_data_path: /home/connor/Downloads/ataxx_data/new_data.txt
+validation_ataxx_data_path: /home/connor/Downloads/ataxx_data/new_data.txt
 
-shuffle_buffer_size: 100000
-num_workers: 6
+shuffle_buffer_size: 400000
+num_workers: 1
 batch_size: 64
 
 visual_directory: 'visual'
