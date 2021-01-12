@@ -2,18 +2,18 @@ device: 'cpu'
 model_save_path: 'model/save.pt'
 bin_model_save_path: 'model/save.bin'
 
-train_ataxx_data_path: /home/connor/Downloads/ataxx_data/new_data.txt
-validation_ataxx_data_path: /home/connor/Downloads/ataxx_data/new_data.txt
+train_ataxx_data_path: /home/connor/Downloads/ataxx_data2/save/train.txt
+validation_ataxx_data_path: /home/connor/Downloads/ataxx_data2/save/validation.txt
 
 shuffle_buffer_size: 400000
-num_workers: 1
-batch_size: 64
+num_workers: 2
+batch_size: 48
 
 visual_directory: 'visual'
 
 epochs: 10000000
 save_rate: 10000
-report_rate: 50
+report_rate: 25
 test_rate: 50
 max_queue_size: 128
 
